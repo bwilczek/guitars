@@ -1,0 +1,59 @@
+{ "databaseChangeLog": [
+  {
+    "changeSet": {
+      "id": "1733823527541-1",
+      "author": "bwilczek (generated)",
+      "changes": [
+        {
+          "createTable": {
+            "columns": [
+              {
+                "column": {
+                  "constraints": {
+                    "nullable": false
+                  },
+                  "name": "year_of_production",
+                  "type": "INTEGER"
+                }
+              },
+              {
+                "column": {
+                  "autoIncrement": true,
+                  "constraints": {
+                    "nullable": false,
+                    "primaryKey": true,
+                    "primaryKeyName": "guitar_pkey"
+                  },
+                  "name": "id",
+                  "type": "BIGINT"
+                }
+              },
+              {
+                "column": {
+                  "name": "brand",
+                  "type": "VARCHAR(255)"
+                }
+              },
+              {
+                "column": {
+                  "name": "description",
+                  "type": "TEXT"
+                }
+              },
+              {
+                "column": {
+                  "name": "model",
+                  "type": "VARCHAR(255)"
+                }
+              }
+            ]
+            ,
+            "tableName": "guitar"
+          }
+        }
+      ]
+
+    }
+  }
+
+]}
